@@ -12,3 +12,7 @@ Student ID: 2369080
 - Printing table: https://www.geeksforgeeks.org/python-sqlite-select-data-from-table/
 - Printing specific information from table: https://docs.python.org/3/library/sqlite3.html
 - Passing variable as attribute in query: https://stackoverflow.com/questions/13880786/python-sqlite3-string-variable-in-execute 
+- Valid string: https://www.geeksforgeeks.org/python-check-if-string-contains-any-number/ 
+
+### Additional Notes
+- Importing students.csv is not part of the main function, it is a separate method that can be called individually or added to main function

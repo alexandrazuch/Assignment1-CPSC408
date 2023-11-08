@@ -149,51 +149,61 @@ def add_new_student():
     first_name = input("First name: ")
     first_name = check_valid(first_name, "string", "First name: ")
     if first_name == "invalid":
+        print("Returning to main menu...")
         return
     #LAST NAME
     last_name = input("Last name: ")
     last_name = check_valid(last_name, "string", "Last name: ")
     if last_name == "invalid":
+        print("Returning to main menu...")
         return
     #GPA
     gpa = input("GPA: ")
     gpa = check_valid(gpa, "gpa", "GPA: ")
     if gpa == "invalid":
+        print("Returning to main menu...")
         return
     #MAJOR
     major = input("Major: ")
     major = check_valid(major, "string", "Major: ")
     if major == "invalid":
+        print("Returning to main menu...")
         return
     #FACULTY ADVISOR
     faculty_advisor = input("Faculty Advisor: ")
     faculty_advisor = check_valid(faculty_advisor, "string", "Faculty Advisor: ")
     if faculty_advisor == "invalid":
+        print("Returning to main menu...")
         return
     #ADDRESS
     address = input("Address: ")
     address = check_valid(address, "address", "Address: ")
     if address == "invalid":
+        print("Returning to main menu...")
         return
     #CITY
     city = input("City: ")
     city = check_valid(city, "string", "City: ")
     if city == "invalid":
+        print("Returning to main menu...")
         return
     #STATE
     state = input("State: ")
     state = check_valid(state, "state", "State: ")
     if state == "invalid":
+        print("Returning to main menu...")
         return
     #ZIP CODE
     zip_code = input("Zip Code: ")
     zip_code = check_valid(zip_code, "number", "Zip Code: ")
     if zip_code == "invalid":
+        print("Returning to main menu...")
         return
     #MOBILE PHONE NUMBER
     mobile_number = input("Mobile Phone Number (format xxx-xxx-xxxx): ")
     mobile_number = check_valid(mobile_number, "phone", "Mobile Phone Number (format xxx-xxx-xxxx): ")
     if mobile_number == "invalid":
+        print("Returning to main menu...")
         return
 
     mycursor.execute(
@@ -370,7 +380,7 @@ def main():
             print("Invalid option")
             # try again option, display options
 
-        again = input("Would you like to choose another option? (please answer with yes or no) ")
+        again = input("Would you like to choose another option? (please answer with yes or no) ") # would user like to pick another option
         if again == "yes":
             continue
         elif again == "no":
